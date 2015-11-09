@@ -4,6 +4,7 @@
 1、SDK下载
 ====================
 下载地址:<a href="https://github.com/hxchen/qikulogin_demo/blob/master/libs/" target="_blank">点此下载进入下载页</a>
+<br>
 资源下载(下载整个res目录放到游戏工程里进行编译):<a href="https://github.com/hxchen/qikulogin_demo/tree/master/src/main/res" target="_blank">点此下载进入下载页</a>
 2、配置
 ====================
