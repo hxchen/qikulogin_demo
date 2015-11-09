@@ -1,2 +1,107 @@
 # qikulogin_demo
-奇酷工场登陆SDK演示Demo
+奇酷工场登陆SDK演示Demo,主要是调用接口加载SDK登陆界面和SDK回调游戏通知2个功能。
+
+1、Jar包下载
+====================
+下载地址:<a href="https://github.com/hxchen/qikulogin_demo/blob/master/libs/">点此下载进入下载页</a>
+2、配置
+====================
+2.1 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/build.gradle">build.gradle</a>
+---------------------
+引入相应的依赖包:
+>
+compile 'com.android.support:appcompat-v7:21.0.3'
+>
+compile 'com.google.android.gms:play-services:4.0.+'
+>
+compile 'com.fasterxml.jackson.core:jackson-databind:2.2.+'
+>
+compile 'com.google.code.gson:gson:2.2.4'
+>
+compile "commons-httpclient:commons-httpclient:3.1"
+>
+compile 'org.springframework.android:spring-android-rest-template:2.0.0.M1'
+
+2.2 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/src/main/AndroidManifest.xml">AndroidManifest.xml</a>
+---------------------
+###2.2.1 添加相应的权限
+>
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+>
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+>
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
+
+###2.2.2 添加Activity声明
+>
+<activity android:name="com.qikuyx.qikulogin.activity.MainActivity"></activity>
+>
+<activity android:name="com.qikuyx.qikulogin.activity.QikuLoginActivity"></activity>
+>
+<activity android:name="com.qikuyx.qikulogin.activity.QikuInputAccountActivity"></activity>
+>
+<activity android:name="com.qikuyx.qikulogin.activity.QikuSetUserInfoActivity"></activity>
+>
+<activity android:name="com.qikuyx.qikulogin.activity.QikuForgetPasswordActivity"></activity>
+>
+<activity android:name="com.qikuyx.qikulogin.activity.QikuForgetPasswordValidateActivity"></activity>
+>
+<activity android:name="com.qikuyx.qikulogin.activity.QikuForgetPasswordSetActivity"></activity>
+>
+<activity android:name="com.qikuyx.qikulogin.activity.QikuRecoveryTemproraryAccountActivity"></activity>
+>
+<activity android:name="com.qikuyx.qikulogin.activity.QikuSelectAccountActivity"></activity>
+>
+<activity android:name="com.qikuyx.qikulogin.activity.QikuBindingInputAccountActivity"></activity>
+>
+<activity android:name="com.qikuyx.qikulogin.activity.QikuBindingValidateActivity"></activity>
+>
+<activity android:name="com.qikuyx.qikulogin.activity.QikuBindingSetUserInfoActivity"></activity>
+
+###2.2.3 添加google_play_services_version
+<pre><code>
+<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+</pre></code>
+2.3 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/src/main/java/com/qikuyx/qikulogin_demo/MainActivity.java">交互</a>
+---------------------
+###2.3.1调用接口加载登陆显示界面
+<pre><code>
+QikuLoginSDK.getInstance().loginForGame(Content content, OnQikuLoginListener onQikuLoginListener);
+</pre></code>
+###2.3.1回调游戏接口
+<pre><code>
+
+private OnQikuLoginListener onQikuLoginListener = new OnQikuLoginListener() {
+        @Override
+        public void onSuccess(String s) {
+            Log.i("游戏Activity", "用户ID = " + s);
+            Intent intent = new Intent(getBaseContext(), GameActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("userID", s);
+            intent.putExtras(bundle);
+            startActivity(intent);
+        }
+
+        @Override
+        public void onFinish() {
+            Log.i("游戏Activity", "用户关闭");
+            Intent intent = new Intent(getBaseContext(), GameActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("userID", "用户关闭");
+            intent.putExtras(bundle);
+            startActivity(intent);
+        }
+
+        @Override
+        public void onExit() {
+            Log.i("游戏Activity", "用户退出 ");
+            Intent intent = new Intent(getBaseContext(), GameActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("userID", "用户退出");
+            intent.putExtras(bundle);
+            startActivity(intent);
+        }
+    };
+</code></pre>

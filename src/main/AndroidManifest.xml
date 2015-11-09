@@ -20,7 +20,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.qikuyx.qikulogin_demo.GameActivity"></activity>
-
         <activity android:name="com.qikuyx.qikulogin.activity.MainActivity"></activity>
         <activity android:name="com.qikuyx.qikulogin.activity.QikuLoginActivity"></activity>
         <activity android:name="com.qikuyx.qikulogin.activity.QikuInputAccountActivity"></activity>
@@ -34,8 +33,6 @@
         <activity android:name="com.qikuyx.qikulogin.activity.QikuBindingValidateActivity"></activity>
         <activity android:name="com.qikuyx.qikulogin.activity.QikuBindingSetUserInfoActivity"></activity>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-
-        <activity android:name="com.qikuyx.qikulogin.activity.AnotherActivity"></activity>
 
     </application>
 
