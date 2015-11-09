@@ -1,9 +1,10 @@
 # qikulogin_demo
 奇酷工场登陆SDK演示Demo,主要是调用接口加载SDK登陆界面和SDK回调游戏通知2个功能。
 
-1、Jar包下载
+1、SDK下载
 ====================
 下载地址:<a href="https://github.com/hxchen/qikulogin_demo/blob/master/libs/" target="_blank">点此下载进入下载页</a>
+资源下载(下载整个res目录放到游戏工程里进行编译):<a href="https://github.com/hxchen/qikulogin_demo/tree/master/src/main/res" target="_blank">点此下载进入下载页</a>
 2、配置
 ====================
 2.1 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/build.gradle" target="_blank">build.gradle</a>
