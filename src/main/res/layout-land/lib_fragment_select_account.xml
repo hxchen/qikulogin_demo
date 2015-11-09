@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/lib_login_background"
+                android:gravity="center_horizontal"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/login_start_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/lib_login_close_selector"/>
+
+                <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/login_logo"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/lib_login_icon"/>
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/login_logo"
+                        android:layout_alignTop="@id/login_logo"
+                        android:layout_marginTop="14dp"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/ll_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lib_quick_title_one"
+                            android:textSize="20sp"
+                            android:textColor="#242424"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/lib_quick_title_two"
+                            android:textSize="16sp"
+                            android:textColor="#d5d5d5"
+                            android:layout_below="@+id/ll_content"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lib_selected_account_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/lib_white_with_corner_background"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp">
+
+                    <ImageView
+                        android:id="@+id/lib_platform_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/lib_platform_tip_qikuyx"/>
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/LibSelectAccountTextStyle"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:hint="@string/lib_name_hint"
+                        android:singleLine="true"
+                        android:layout_toRightOf="@id/lib_platform_tip"
+                        android:layout_toLeftOf="@+id/lib_select_account_layout"/>
+
+                    <LinearLayout
+                        android:id="@+id/lib_select_account_layout"
+                        android:layout_width="46dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/lib_select_account"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/lib_select_account_arrow"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/lib_select_account_layout"
+                        android:background="@drawable/lib_seperate_line_port"/>
+
+                    <View
+                        android:id="@+id/cv_popup_window_anchor"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:padding="0dp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lib_login_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        android:text="@string/lib_start"
+                        android:textColor="@color/lib_white"
+                        android:textSize="21sp"
+                        android:background="@drawable/lib_button_red_background"
+                        android:id="@+id/tv_login"
+                        android:layout_weight="1">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        android:text="@string/lib_start_other_login_method"
+                        android:textColor="@color/lib_white"
+                        android:textSize="21sp"
+                        android:background="@drawable/lib_button_brown_background"
+                        android:id="@+id/tv_other_login"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp" />
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        android:text="@string/lib_binging_email"
+                        android:textColor="@color/lib_white"
+                        android:textSize="21sp"
+                        android:background="@drawable/lib_button_brown_background"
+                        android:id="@+id/tv_binding_email"
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

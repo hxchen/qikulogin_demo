@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lib_background_white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/lib_title_background">
+
+        <TextView
+            android:id="@+id/tv_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:gravity="center"
+            android:textColor="#929292"
+            android:textSize="18sp"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/lib_top_return_selector"/>
+
+        <TextView
+            android:id="@+id/lib_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="#242424"
+            android:textSize="19sp"
+            android:text="@string/lib_user_login" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lib_white_with_corner_background"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    style="@style/LibEditTextStyle"
+                    android:id="@+id/et_account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/lib_account_hint"
+                    android:inputType="textNoSuggestions"
+                    android:imeOptions="actionNext"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@drawable/lib_divider_solid_line_background"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    style="@style/LibEditTextStyle"
+                    android:id="@+id/et_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/lib_password"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionDone"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp">
+
+            <Button
+                style="@style/LibButtonStyle"
+                android:id="@+id/btn_regist"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/lib_button_brown_background"
+                android:text="@string/lib_register"/>
+
+            <Button
+                style="@style/LibButtonStyle"
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/lib_button_red_background"
+                android:text="@string/lib_login"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:id="@+id/tv_forget_password"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/lib_forget_password"
+                android:textColor="#242424"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_find_temporary_account"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/lib_find_temporary_account"
+                android:textColor="#242424"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

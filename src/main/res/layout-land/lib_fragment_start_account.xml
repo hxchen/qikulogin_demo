@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <LinearLayout
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/lib_login_background"
+                    android:gravity="center_horizontal"
+                    android:layout_centerInParent="true"
+                    >
+
+                <ImageView
+                        android:id="@+id/login_start_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/lib_login_close_selector"/>
+
+                <RelativeLayout android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:gravity="center">
+                    <ImageView
+                            android:id="@+id/login_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginRight="6dp"
+                            android:src="@drawable/lib_login_icon"/>
+
+                    <RelativeLayout android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@id/login_logo"
+                                    android:layout_alignTop="@id/login_logo"
+                                    android:layout_marginTop="14dp"
+                                    android:gravity="center">
+                        <TextView
+                                android:id="@+id/ll_content"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lib_quick_title_one"
+                                android:textSize="20sp"
+                                android:textColor="#242424"/>
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/lib_quick_title_two"
+                                android:textSize="16sp"
+                                android:textColor="#d5d5d5"
+                                android:layout_below="@+id/ll_content"
+                                android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                        android:id="@+id/lib_quick_start_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/lib_button_red_background"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginRight="23dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/lib_quick_start"
+                            android:textColor="@color/lib_white"
+                            android:textSize="18sp">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/lib_qiku_login_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/lib_button_brown_background"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginRight="23dp"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/lib_qiku_login"
+                            android:textColor="@color/lib_white"
+                            android:textSize="18sp">
+                    </TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/lib_input_box_bg"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:textColor="@color/lib_black_normal"
+            android:textSize="17sp"
+            android:text="@string/lib_dialog_shiwan_descptiont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/lib_dialog_shiwan_confirm"
+            android:background="@drawable/lib_button_search_selector"
+            android:textSize="17sp"
+            android:textColor="@color/lib_white"
+            android:text="@string/lib_alert_dialog_positive_text"
+            android:layout_width="290dp"
+            android:layout_marginTop="27dp"
+            android:layout_height="35dp"
+            style="@style/LibButtonStyle" />
+
+
+    </LinearLayout>
+</RelativeLayout>

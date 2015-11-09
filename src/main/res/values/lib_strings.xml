@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rule_password">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="lib_confirm">确定</string>
+    <string name="lib_cancel">取消</string>
+    <string name="lib_api_error">服务器错误，请稍后再试</string>
+    <!-- lib_fragment_local_login -->
+    <string name="lib_user_login">用户登录</string>
+    <string name="lib_account_hint">账号(邮箱)</string>
+    <string name="lib_password">密码</string>
+    <string name="lib_register">注册用户</string>
+    <string name="lib_forget_password">忘记密码？</string>
+    <string name="lib_find_temporary_account">找回临时账号</string>
+    <string name="lib_login">登 录</string>
+    <string name="lib_account_empty">请输入账号</string>
+    <string name="lib_nickname_empty">请输入昵称</string>
+    <string name="lib_password_empty">请输入密码</string>
+    <string name="api_login_email_not_exist">账户不存在!</string>
+    <string name="api_login_sucsess">登陆成功</string>
+    <string name="api_login_password_error">密码错误!</string>
+    <!-- lib_fragment_start_account -->
+    <string name="lib_quick_title_one">奇酷通行证</string>
+    <string name="lib_quick_title_two">www.qikuyx.com</string>
+    <string name="lib_quick_start">快速开始游戏</string>
+    <string name="lib_qiku_login">邮箱登录</string>
+    <string name="lib_quick_start_description">首次登录，将自动注册奇酷试玩账号</string>
+    <string name="lib_other_login_method">登录已有账号</string>
+    <!-- lib_fragment_select_account -->
+    <string name="lib_name_hint">选择登录账号</string>
+    <string name="lib_start">登 录</string>
+    <string name="lib_start_other_login_method">登录其它账号</string>
+    <string name="lib_binging_email">完善账号</string>
+    <string name="lib_start_select_account">请选择登陆账号</string>
+    <!-- lib_alert_dialog -->
+    <string name="lib_alert_dialog_msg">你确定吗？</string>
+    <string name="lib_alert_dialog_negative_text">取 消</string>
+    <string name="lib_alert_dialog_positive_text">确 定</string>
+    <!--lib_dialog_shiwan-->
+    <string name="lib_dialog_shiwan_label">试玩</string>
+    <string name="lib_dialog_shiwan_title">将以试玩账号进入游戏</string>
+    <string name="lib_dialog_shiwan_descptiont">为了保证账号安全，建议尽快升级到正式账号。我们将把试玩账号的恢复码以图片形式存到设备的相册中以方便您找回账号</string>
+    <string name="lib_dialog_shiwan_positive_text">确 定</string>
+    <string name="lib_dialog_shiwan_save_picture_success">恢复码图片保存成功!</string>
+    <!--lib_activity_input_account-->
+    <string name="lib_input_account_confirm">确定</string>
+    <string name="lib_input_account">请输入您的邮箱</string>
+    <string name="lib_input_account_error">邮箱格式不正确</string>
+    <string name="api_regist_exist_email">该邮箱已被注册</string>
+    <!--lib_activity_set_user_info-->
+    <string name="lib_set_user_info_descp">你填写的邮箱是:%1$s,其将与账号绑定，请确认设置昵称密码。</string>
+    <string name="lib_set_user_info_title">注册账号</string>
+    <string name="lib_nickname">昵称</string>
+    <string name="lib_start_platform">进入游戏平台</string>
+    <string name="api_regist_success">注册成功,将进入游戏</string>
+    <!--lib_activity_forget_password-->
+    <string name="lib_forget_password_title">忘记密码</string>
+    <string name="lib_input_bind_account">请输入绑定的邮箱</string>
+    <string name="lib_input_bind_account_error">邮箱格式不正确</string>
+    <!--lib_activity_forget_password_validate-->
+    <string name="lib_validate_code_sent">验证码已发送至：%1$s</string>
+    <string name="lib_input_validate_code">请输入你收到的验证码</string>
+    <string name="lib_second">秒</string>
+    <string name="lib_send_again">重新发送</string>
+    <string name="lib_send_again_success">发送成功</string>
+    <string name="api_account_not_exist">账户不存在</string>
+    <!--lib_activity_forget_password_set-->
+    <string name="lib_forget_password_set_title">重置密码</string>
+    <string name="lib_forget_password_input_password">输入新密码</string>
+    <string name="lib_forget_password_confirm_input_password">再次输入新密码</string>
+    <string name="lib_forget_password_input_password_empty">请输入新密码</string>
+    <string name="lib_forget_password_confirm_input_password_empty">请输入确认密码</string>
+    <string name="lib_forget_password_different_password">新密码和确认密码不一致</string>
+    <string name="lib_forget_password_set_success">修改密码成功</string>
+    <!--lib_activity_game_main-->
+    <string name="lib_welcome_user">欢迎你:%1$s,您的ID是:%2$s</string>
+    <!--lib_activity_find_temporary_account-->
+    <string name="lib_find_temporary_account_title">找回临时账号</string>
+    <string name="lib_find_temporary_account_descp">请在首次使用临时账号登陆游戏的设备相册中，找到有以下内容的图片并填写:</string>
+    <string name="lib_find_temporary_account_uid">请输入账号的UID</string>
+    <string name="lib_find_temporary_account_recovery_code">请输入恢复码</string>
+    <!--lib_dialog_recovery-->
+    <string name="lib_dialog_recovery_success">账号恢复成功</string>
+    <string name="lib_dialog_recovery_enter_game">进入游戏</string>
+    <!--lib_desktop_layout-->
+    <string name="lib_exit">退出</string>
+    <!--lib_dialog_delete_account-->
+    <string name="delete_account_confirm_descp">确定要删除此账号在本设备上的登录信息吗?(不会删除账号本身)</string>
+    <!--lib_activity_binding_input_account-->
+    <string name="lib_binding_email_title">使用邮箱升级账号</string>
+    <string name="lib_binding_email_descp">请输入您的邮箱地址</string>
+    <string name="lib_binding_email_exist_email">此邮箱已被注册</string>
+    <string name="lib_binding_email_unknown_error">未知类型错误</string>
+    <!--lib_activity_binding_validate_code-->
+    <string name="lib_binding_validate_error">验证码输入错误</string>
+    <!--lib_activity_binding_set_user_info-->
+    <string name="lib_binding_upgrade_success">升级试玩账号成功，将进入游戏</string>
+</resources>

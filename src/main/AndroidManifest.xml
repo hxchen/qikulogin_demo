@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qikuyx.qikulogin_demo" >
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.qikuyx.qikulogin_demo.GameActivity"></activity>
+
+        <activity android:name="com.qikuyx.qikulogin.activity.MainActivity"></activity>
+        <activity android:name="com.qikuyx.qikulogin.activity.QikuLoginActivity"></activity>
+        <activity android:name="com.qikuyx.qikulogin.activity.QikuInputAccountActivity"></activity>
+        <activity android:name="com.qikuyx.qikulogin.activity.QikuSetUserInfoActivity"></activity>
+        <activity android:name="com.qikuyx.qikulogin.activity.QikuForgetPasswordActivity"></activity>
+        <activity android:name="com.qikuyx.qikulogin.activity.QikuForgetPasswordValidateActivity"></activity>
+        <activity android:name="com.qikuyx.qikulogin.activity.QikuForgetPasswordSetActivity"></activity>
+        <activity android:name="com.qikuyx.qikulogin.activity.QikuRecoveryTemproraryAccountActivity"></activity>
+        <activity android:name="com.qikuyx.qikulogin.activity.QikuSelectAccountActivity"></activity>
+        <activity android:name="com.qikuyx.qikulogin.activity.QikuBindingInputAccountActivity"></activity>
+        <activity android:name="com.qikuyx.qikulogin.activity.QikuBindingValidateActivity"></activity>
+        <activity android:name="com.qikuyx.qikulogin.activity.QikuBindingSetUserInfoActivity"></activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.qikuyx.qikulogin.activity.AnotherActivity"></activity>
+
+    </application>
+
+</manifest>
