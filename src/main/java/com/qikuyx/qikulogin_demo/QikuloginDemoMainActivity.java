@@ -10,7 +10,7 @@ import com.qikuyx.qikulogin.game.OnQikuLoginListener;
 import com.qikuyx.qikulogin.game.QikuLoginSDK;
 
 
-public class MainActivity extends Activity implements View.OnClickListener{
+public class QikuloginDemoMainActivity extends Activity implements View.OnClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
