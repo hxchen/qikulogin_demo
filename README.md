@@ -1,14 +1,16 @@
 # qikulogin_demo
 奇酷工场登陆SDK演示Demo,主要是调用接口加载SDK登陆界面和SDK回调游戏通知2个功能。
 
-1、SDK下载
-====================
+## 1、SDK下载
+
 代码下载地址:<a href="https://github.com/hxchen/qikulogin_demo/blob/master/libs/" target="_blank">点此下载进入下载页</a>
-<br>
+
+
 资源下载:(下载整个res目录放到游戏工程里进行编译)<a href="https://github.com/hxchen/qikulogin_demo/tree/master/src/main/res" target="_blank">点此下载进入下载页</a>
-2、配置
-====================
-2.1 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/build.gradle" target="_blank">build.gradle</a>
+
+## 2、配置
+
+### 2.1 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/build.gradle" target="_blank">build.gradle</a>
 ---------------------
 引入相应的依赖包:
 ```
@@ -22,15 +24,15 @@
     implementation 'com.google.android.gms:play-services-auth:10.2.1'
     implementation 'com.google.android.gms:play-services-gcm:10.2.1'
 ```
-2.2 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/src/main/AndroidManifest.xml" target="_blank">AndroidManifest.xml</a>
+### 2.2 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/src/main/AndroidManifest.xml" target="_blank">AndroidManifest.xml</a>
 ---------------------
-###2.2.1 添加相应的权限
+### 2.2.1 添加相应的权限
 ```
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
 <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 ```
-###2.2.2 添加Activity声明
+### 2.2.2 添加Activity声明
 ```
 <activity android:name="com.qikuyx.qikulogin.activity.MainActivity"></activity>
 <activity android:name="com.qikuyx.qikulogin.activity.QikuLoginActivity"></activity>
@@ -45,17 +47,17 @@
 <activity android:name="com.qikuyx.qikulogin.activity.QikuBindingValidateActivity"></activity>
 <activity android:name="com.qikuyx.qikulogin.activity.QikuBindingSetUserInfoActivity"></activity>
 ```
-###2.2.3 添加google_play_services_version
+### 2.2.3 添加google_play_services_version
 ```
 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 ```
-2.3 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/src/main/java/com/qikuyx/qikulogin_demo/MainActivity.java" target="_blank">交互</a>
+## 2.3 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/src/main/java/com/qikuyx/qikulogin_demo/MainActivity.java" target="_blank">交互</a>
 ---------------------
-###2.3.1调用接口加载登陆显示界面
+### 2.3.1调用接口加载登陆显示界面
 ```Java
 QikuLoginSDK.getInstance().loginForGame(Content content, OnQikuLoginListener onQikuLoginListener);
 ```
-###2.3.2回调游戏接口
+### 2.3.2回调游戏接口
 
 ```Java
 private OnQikuLoginListener onQikuLoginListener = new OnQikuLoginListener() {
