@@ -11,7 +11,7 @@
 ## 2、配置
 
 ### 2.1 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/build.gradle" target="_blank">build.gradle</a>
----------------------
+
 引入相应的依赖包:
 ```
     implementation 'com.android.support:appcompat-v7:26.1.0'
@@ -25,7 +25,7 @@
     implementation 'com.google.android.gms:play-services-gcm:10.2.1'
 ```
 ### 2.2 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/src/main/AndroidManifest.xml" target="_blank">AndroidManifest.xml</a>
----------------------
+
 ### 2.2.1 添加相应的权限
 ```
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
@@ -52,7 +52,7 @@
 <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 ```
 ## 2.3 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/src/main/java/com/qikuyx/qikulogin_demo/MainActivity.java" target="_blank">交互</a>
----------------------
+
 ### 2.3.1调用接口加载登陆显示界面
 ```Java
 QikuLoginSDK.getInstance().loginForGame(Content content, OnQikuLoginListener onQikuLoginListener);
