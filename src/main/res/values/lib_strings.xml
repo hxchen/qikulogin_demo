@@ -8,7 +8,7 @@
     <string name="lib_user_login">用户登录</string>
     <string name="lib_account_hint">账号(邮箱)</string>
     <string name="lib_password">密码</string>
-    <string name="lib_register">注册用户</string>
+    <string name="lib_register">注册账号</string>
     <string name="lib_forget_password">忘记密码？</string>
     <string name="lib_find_temporary_account">找回临时账号</string>
     <string name="lib_login">登 录</string>
@@ -41,6 +41,7 @@
     <string name="lib_dialog_shiwan_descptiont">为了保证账号安全，建议尽快升级到正式账号。我们将把试玩账号的恢复码以图片形式存到设备的相册中以方便您找回账号</string>
     <string name="lib_dialog_shiwan_positive_text">确 定</string>
     <string name="lib_dialog_shiwan_save_picture_success">恢复码图片保存成功!</string>
+    <string name="lib_dial0g_shiwan_need_grant">申请保存到相册权限失败</string>
     <!--lib_activity_input_account-->
     <string name="lib_input_account_confirm">确定</string>
     <string name="lib_input_account">请输入您的邮箱</string>

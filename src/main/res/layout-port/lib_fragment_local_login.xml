@@ -63,7 +63,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:hint="@string/lib_account_hint"
-                        android:inputType="textEmailAddress"
+                        android:inputType="textNoSuggestions"
                         android:imeOptions="actionNext"/>
             </RelativeLayout>
 
@@ -140,7 +140,6 @@
                     android:text="@string/lib_register"
                     android:textColor="#ffffffff"
                     android:textSize="20sp"/>
-
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

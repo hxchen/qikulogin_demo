@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rule_password">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="lib_confirm">OK</string>
+    <string name="lib_cancel">キャンセル</string>
+    <string name="lib_api_error">サーバーエラー，後ほど再度お試してください</string>
+    <!-- lib_fragment_local_login -->
+    <string name="lib_user_login">ログイン</string>
+    <string name="lib_account_hint">メールアドレス</string>
+    <string name="lib_password">パスワード</string>
+    <string name="lib_register">アカウントを登録する</string>
+    <string name="lib_forget_password">アカウントを忘れた場合</string>
+    <string name="lib_find_temporary_account">クイックプレイアカウント復旧</string>
+    <string name="lib_login">登録</string>
+    <string name="lib_account_empty">アカウントを入力してください</string>
+    <string name="lib_nickname_empty">キャラクター名を入力してください</string>
+    <string name="lib_password_empty">パスワードを入力してください</string>
+    <string name="api_login_email_not_exist">アカウントが存在してありません</string>
+    <string name="api_login_sucsess">ログインしました</string>
+    <string name="api_login_password_error">パスワード入力ミス</string>
+    <!-- lib_fragment_start_account -->
+    <string name="lib_quick_title_one">CoolFactory</string>
+    <string name="lib_quick_title_two">www.coolfactory.jp</string>
+    <string name="lib_quick_start">クイックプレイ</string>
+    <string name="lib_qiku_login">アカウントでログイン</string>
+    <string name="lib_quick_start_description">初回ログインの場合、自動的にCoolFactoryクイックアカウントを作成します</string>
+    <string name="lib_other_login_method">既存のアカウントにログインします</string>
+    <!-- lib_fragment_select_account -->
+    <string name="lib_name_hint">アカウントを選択します</string>
+    <string name="lib_start">ログイン</string>
+    <string name="lib_start_other_login_method">アカウント変更</string>
+    <string name="lib_binging_email">アカウントを完備します</string>
+    <string name="lib_start_select_account">アカウントをご選択してください</string>
+    <!-- lib_alert_dialog -->
+    <string name="lib_alert_dialog_msg">アカウントを削除しますか</string>
+    <string name="lib_alert_dialog_negative_text">キャンセル</string>
+    <string name="lib_alert_dialog_positive_text">OK</string>
+    <!--lib_dialog_shiwan-->
+    <string name="lib_dialog_shiwan_label">クイックプレイ</string>
+    <string name="lib_dialog_shiwan_title">ゲストアカウントでゲームにログインします</string>
+    <string name="lib_dialog_shiwan_descptiont">アカウント安全のために、正式アカウントに関連付けください。クイックプレイのアカウント情報は該当画像に記載し、大切に保管して下さい。</string>
+    <string name="lib_dialog_shiwan_positive_text">OK</string>
+    <string name="lib_dialog_shiwan_save_picture_success">画像は保存しました!</string>
+    <string name="lib_dial0g_shiwan_need_grant">アルバイトにアクセス権限の取得に失敗しました。</string>
+    <!--lib_activity_input_account-->
+    <string name="lib_input_account_confirm">OK</string>
+    <string name="lib_input_account">正しいメールアドレスを入力してください</string>
+    <string name="lib_input_account_error">正しいメールアドレスを入力してください</string>
+    <string name="api_regist_exist_email">当メールアドレスは既に登録しました。ログイン／パスワード復旧してください</string>
+    <!--lib_activity_set_user_info-->
+    <string name="lib_set_user_info_descp">入力したメールアドレスは:%1$s,アカウントに関連付けますので、キャラクター名／パスワードを設定してください</string>
+    <string name="lib_set_user_info_title">アカウントを登録する</string>
+    <string name="lib_nickname">キャラクター名</string>
+    <string name="lib_start_platform">ゲームにログイン</string>
+    <string name="api_regist_success">登録しました。ゲームはスタートします。</string>
+    <!--lib_activity_forget_password-->
+    <string name="lib_forget_password_title">アカウントを忘れた場合</string>
+    <string name="lib_input_bind_account">関連付けのメールアドレスを入力してください</string>
+    <string name="lib_input_bind_account_error">メールアドレスのフォーマットが正しくありません</string>
+    <!--lib_activity_forget_password_validate-->
+    <string name="lib_validate_code_sent">認証コードは下記のメールアドレスに送信しました:%1$s \n認証コードを入力してください</string>
+    <string name="lib_input_validate_code">認証コードをご入力ください</string>
+    <string name="lib_second">秒</string>
+    <string name="lib_send_again">再送信</string>
+    <string name="lib_send_again_success">送信しました</string>
+    <string name="api_account_not_exist">アカウントが存在してありません</string>
+    <!--lib_activity_forget_password_set-->
+    <string name="lib_forget_password_set_title">パスワード変更</string>
+    <string name="lib_forget_password_input_password">新パスワードを入力してください</string>
+    <string name="lib_forget_password_confirm_input_password">新パスワードを再入力してください</string>
+    <string name="lib_forget_password_input_password_empty">新パスワードを入力してください</string>
+    <string name="lib_forget_password_confirm_input_password_empty">パスワードをもう一度入力してください</string>
+    <string name="lib_forget_password_different_password">パスワードは正しくありません</string>
+    <string name="lib_forget_password_set_success">パスワードを変更しました</string>
+    <!--lib_activity_game_main-->
+    <string name="lib_welcome_user">ようこそ:%1$s,ご利用のID番号は:%2$s</string>
+    <!--lib_activity_find_temporary_account-->
+    <string name="lib_find_temporary_account_title">ゲストアカウントを復旧します</string>
+    <string name="lib_find_temporary_account_descp">ゲストアカウント情報をご入力ください。アカウント情報は初めてゲストアカウントをご利用の際に保存された画像に記載されています:</string>
+    <string name="lib_find_temporary_account_uid">アカウントをご入力ください</string>
+    <string name="lib_find_temporary_account_recovery_code">パスワードをご入力ください</string>
+    <!--lib_dialog_recovery-->
+    <string name="lib_dialog_recovery_success">アカウントの復元は完了しました</string>
+    <string name="lib_dialog_recovery_enter_game">ゲームにログイン</string>
+    <!--lib_desktop_layout-->
+    <string name="lib_exit">ログアウト</string>
+    <!--lib_dialog_delete_account-->
+    <string name="delete_account_confirm_descp">当アカウントのログイン情報を端末から削除しますか（アカウント自身が削除されません）</string>
+    <!--lib_activity_binding_input_account-->
+    <string name="lib_binding_email_title">メールアドレスに関連付けます</string>
+    <string name="lib_binding_email_descp">メールアドレスを入力してください</string>
+    <string name="lib_binding_email_exist_email">当メールアドレスは既に登録しました</string>
+    <string name="lib_binding_email_unknown_error">不明なエラー</string>
+    <!--lib_activity_binding_validate_code-->
+    <string name="lib_binding_validate_error">認証コードは正しくありません</string>
+    <!--lib_activity_binding_set_user_info-->
+    <string name="lib_binding_upgrade_success">ゲストアカウントの関連付けは成功しました，ゲームはスタートします。</string>
+</resources>

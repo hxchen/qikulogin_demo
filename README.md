@@ -12,12 +12,15 @@
 ---------------------
 引入相应的依赖包:
 ```
-compile 'com.android.support:appcompat-v7:21.0.3'
-compile 'com.google.android.gms:play-services:4.0.+'
-compile 'com.fasterxml.jackson.core:jackson-databind:2.2.+'
-compile 'com.google.code.gson:gson:2.2.4'
-compile "commons-httpclient:commons-httpclient:3.1"
-compile 'org.springframework.android:spring-android-rest-template:2.0.0.M1'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.google.android.gms:play-services:10.2.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.2.+'
+    implementation 'com.google.code.gson:gson:2.2.4'
+    implementation 'commons-httpclient:commons-httpclient:3.1'
+    implementation 'org.springframework.android:spring-android-rest-template:2.0.0.M1'
+    implementation 'com.google.android.gms:play-services-ads:10.2.1'
+    implementation 'com.google.android.gms:play-services-auth:10.2.1'
+    implementation 'com.google.android.gms:play-services-gcm:10.2.1'
 ```
 2.2 <a href="https://github.com/hxchen/qikulogin_demo/blob/master/src/main/AndroidManifest.xml" target="_blank">AndroidManifest.xml</a>
 ---------------------
@@ -26,7 +29,6 @@ compile 'org.springframework.android:spring-android-rest-template:2.0.0.M1'
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
 <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"></uses-permission>
 ```
 ###2.2.2 添加Activity声明
 ```
@@ -53,7 +55,7 @@ compile 'org.springframework.android:spring-android-rest-template:2.0.0.M1'
 ```Java
 QikuLoginSDK.getInstance().loginForGame(Content content, OnQikuLoginListener onQikuLoginListener);
 ```
-###2.3.1回调游戏接口
+###2.3.2回调游戏接口
 
 ```Java
 private OnQikuLoginListener onQikuLoginListener = new OnQikuLoginListener() {
